@@ -1,5 +1,5 @@
 <?xml version="1.1" encoding="UTF-8"?>
-<stub:stub xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" disposition="MOD" encoding="939" fileStatus="00" id="Tests/Stubs/CWXTCOB_RPTFILE_FILE_01.stub" stubtype="QSAM" target="RPTFILE" token="40000">
+<stub:stub xmlns:checkconditions="http://www.compuware.com/model/xml/checkconditions" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" disposition="MOD" encoding="939" fileStatus="00" id="Tests/Stubs/CWXTCOB_RPTFILE_FILE_01.stub" stubtype="QSAM" target="RPTFILE" token="40000">
   <properties:properties>
     <properties:property name="bufferType" type="string">OO</properties:property>
     <properties:property name="rollover" type="string">0</properties:property>
@@ -13,8 +13,14 @@
           <properties:property name="value" type="string">404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040</properties:property>
         </properties:properties>
       </stub:data>
+      <stub:data baseType="listructure:stringType ../Structures/CWXTCOB_RPTFILE_BLANK-LINE.listructure#BLANK_LINE.BLANK_LINE" id="output0.arg0.BLANK_LINE.BLANK_LINE"/>
     </stub:output>
-    <stub:checkconditions/>
+    <stub:checkconditions>
+      <checkconditions:simpleCheckcondition refData="#output0.arg0.BLANK_LINE.BLANK_LINE">
+        <checkconditions:expectation assert="noassert"/>
+      </checkconditions:simpleCheckcondition>
+    </stub:checkconditions>
+    <stub:inputDataCheckconditions/>
   </stub:stubdata>
   <stub:stubdata id="1" name="RPTFILE">
     <stub:interface>../Interfaces/CWXTCOB_RPTFILE_BLANK_LINE.interface#Tests/Interfaces/CWXTCOB_RPTFILE_BLANK_LINE.interface</stub:interface>
