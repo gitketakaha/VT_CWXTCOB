@@ -17,7 +17,7 @@
     </stub:output>
     <stub:checkconditions>
       <checkconditions:simpleCheckcondition refData="#output0.arg0.BLANK_LINE.BLANK_LINE">
-        <checkconditions:expectation assert="noassert"/>
+        <checkconditions:expectation assert="noassert"></checkconditions:expectation>
       </checkconditions:simpleCheckcondition>
     </stub:checkconditions>
     <stub:inputDataCheckconditions/>
@@ -49,7 +49,7 @@
     <stub:output listructure="../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#Tests/Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure">
       <stub:data baseType="listructure:structType ../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#EMPLOYEE_HDR1" id="arg0.EMPLOYEE_HDR1">
         <properties:properties>
-          <properties:property name="value" type="string">40D9E4D540C4C1E3C54040F0F761F2F561F2F240404040404040C5D4D7D3D6E8C5C540C3D6D4D7C5D5E2C1E3C9D6D540D9C5D7D6D9E3404040404040404040404040404040404040D7C1C7C5404040F140</properties:property>
+          <properties:property name="value" type="string">40D9E4D540C4C1E3C54040F0F761F2F161F2F240404040404040C5D4D7D3D6E8C5C540C3D6D4D7C5D5E2C1E3C9D6D540D9C5D7D6D9E3404040404040404040404040404040404040D7C1C7C5404040F140</properties:property>
         </properties:properties>
       </stub:data>
     </stub:output>
