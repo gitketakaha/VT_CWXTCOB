@@ -15,11 +15,7 @@
       </stub:data>
       <stub:data baseType="listructure:stringType ../Structures/CWXTCOB_RPTFILE_BLANK-LINE.listructure#BLANK_LINE.BLANK_LINE" id="output0.arg0.BLANK_LINE.BLANK_LINE"/>
     </stub:output>
-    <stub:checkconditions>
-      <checkconditions:simpleCheckcondition refData="#output0.arg0.BLANK_LINE.BLANK_LINE">
-        <checkconditions:expectation assert="noassert"></checkconditions:expectation>
-      </checkconditions:simpleCheckcondition>
-    </stub:checkconditions>
+    <stub:checkconditions/>
     <stub:inputDataCheckconditions/>
   </stub:stubdata>
   <stub:stubdata id="1" name="RPTFILE">
@@ -52,8 +48,26 @@
           <properties:property name="value" type="string">40D9E4D540C4C1E3C54040F0F761F2F161F2F240404040404040C5D4D7D3D6E8C5C540C3D6D4D7C5D5E2C1E3C9D6D540D9C5D7D6D9E3404040404040404040404040404040404040D7C1C7C5404040F140</properties:property>
         </properties:properties>
       </stub:data>
+      <stub:data baseType="listructure:numberType ../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#EMPLOYEE_HDR1.EMP_RUN_DD" id="output3.arg0.EMPLOYEE_HDR1.EMP_RUN_DD"/>
+      <stub:data baseType="listructure:numberType ../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#EMPLOYEE_HDR1.EMP_RUN_MM" id="output3.arg0.EMPLOYEE_HDR1.EMP_RUN_MM"/>
+      <stub:data baseType="listructure:numberType ../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#EMPLOYEE_HDR1.EMP_RUN_YY" id="output3.arg0.EMPLOYEE_HDR1.EMP_RUN_YY"/>
+      <stub:data baseType="listructure:numberType ../Structures/CWXTCOB_RPTFILE_EMPLOYEE-HDR1.listructure#EMPLOYEE_HDR1.EMP_PAGE" id="output3.arg0.EMPLOYEE_HDR1.EMP_PAGE"/>
     </stub:output>
-    <stub:checkconditions/>
+    <stub:checkconditions>
+      <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_DD">
+        <checkconditions:expectation assert="noassert" type="number"/>
+      </checkconditions:simpleCheckcondition>
+      <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_MM">
+        <checkconditions:expectation assert="noassert" type="number"/>
+      </checkconditions:simpleCheckcondition>
+      <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_YY">
+        <checkconditions:expectation assert="noassert" type="number"/>
+      </checkconditions:simpleCheckcondition>
+      <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_PAGE">
+        <checkconditions:expectation assert="noassert" type="number"/>
+      </checkconditions:simpleCheckcondition>
+    </stub:checkconditions>
+    <stub:inputDataCheckconditions/>
   </stub:stubdata>
   <stub:stubdata id="4" name="RPTFILE">
     <stub:interface>../Interfaces/CWXTCOB_RPTFILE_BLANK_LINE.interface#Tests/Interfaces/CWXTCOB_RPTFILE_BLANK_LINE.interface</stub:interface>
