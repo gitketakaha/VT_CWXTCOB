@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 20.8.1.v20210914-0447_93?>
+<!--Topaz for Total Test 20.8.1.v20210914-0447_93 2022/07/25 17:17:20-->
+<interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Tests/Interfaces/CWXTCOB.interface">
+  <interface:description></interface:description>
+  <interface:argument listructure="../Structures/CWXTCOB_PARMINFO.listructure#Tests/Structures/CWXTCOB_PARMINFO.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/CWXTCOB_PARMINFO.listructure#PARMINFO">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/CWXTCOB_PARMINFO.listructure#PARMINFO.PARM_LTH">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/CWXTCOB_PARMINFO.listructure#PARMINFO.PARM_DATA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+</interface:interface>

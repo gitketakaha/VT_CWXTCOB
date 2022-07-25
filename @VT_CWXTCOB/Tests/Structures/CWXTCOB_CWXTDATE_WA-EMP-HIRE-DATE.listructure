@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 20.8.1.v20210914-0447_93?>
+<!--Topaz for Total Test 20.8.1.v20210914-0447_93 2022/07/25 17:13:34-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Tests/Structures/CWXTCOB_CWXTDATE_WA-EMP-HIRE-DATE.listructure">
+  <listructure:struct id="WA_EMP_HIRE_DATE" name="WA_EMP_HIRE_DATE">
+    <properties:properties>
+      <properties:property name="displayLength" type="number">6</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+      <properties:property name="storageLength" type="number">6</properties:property>
+    </properties:properties>
+    <listructure:struct id="WA_EMP_HIRE_DATE.WA_EMP_HIRE_DATE" name="WA_EMP_HIRE_DATE">
+      <properties:properties>
+        <properties:property name="displayLength" type="number">6</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="storageLength" type="number">6</properties:property>
+      </properties:properties>
+      <listructure:number id="WA_EMP_HIRE_DATE.WA_EMP_HIRE_DATE.WA_EMP_HIRE_YY" length="2" name="WA_EMP_HIRE_YY">
+        <properties:properties>
+          <properties:property name="picture" type="string">9(2)</properties:property>
+          <properties:property name="displayLength" type="number">2</properties:property>
+          <properties:property name="integerDigits" type="number">2</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">zoned</properties:property>
+          <properties:property name="mask" type="string">9(2)</properties:property>
+          <properties:property name="storageLength" type="number">2</properties:property>
+        </properties:properties>
+      </listructure:number>
+      <listructure:number id="WA_EMP_HIRE_DATE.WA_EMP_HIRE_DATE.WA_EMP_HIRE_MM" length="2" name="WA_EMP_HIRE_MM">
+        <properties:properties>
+          <properties:property name="picture" type="string">9(2)</properties:property>
+          <properties:property name="displayLength" type="number">2</properties:property>
+          <properties:property name="integerDigits" type="number">2</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">zoned</properties:property>
+          <properties:property name="mask" type="string">9(2)</properties:property>
+          <properties:property name="storageLength" type="number">2</properties:property>
+        </properties:properties>
+      </listructure:number>
+      <listructure:number id="WA_EMP_HIRE_DATE.WA_EMP_HIRE_DATE.WA_EMP_HIRE_DD" length="2" name="WA_EMP_HIRE_DD">
+        <properties:properties>
+          <properties:property name="picture" type="string">9(2)</properties:property>
+          <properties:property name="displayLength" type="number">2</properties:property>
+          <properties:property name="integerDigits" type="number">2</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">zoned</properties:property>
+          <properties:property name="mask" type="string">9(2)</properties:property>
+          <properties:property name="storageLength" type="number">2</properties:property>
+        </properties:properties>
+      </listructure:number>
+    </listructure:struct>
+  </listructure:struct>
+</listructure:listructure>

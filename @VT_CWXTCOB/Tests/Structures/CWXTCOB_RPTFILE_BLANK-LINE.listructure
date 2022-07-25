@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 20.8.1.v20210914-0447_93?>
+<!--Topaz for Total Test 20.8.1.v20210914-0447_93 2022/07/25 17:17:20-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Tests/Structures/CWXTCOB_RPTFILE_BLANK-LINE.listructure">
+  <listructure:struct id="BLANK_LINE" name="BLANK_LINE">
+    <properties:properties>
+      <properties:property name="displayLength" type="number">80</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+      <properties:property name="storageLength" type="number">80</properties:property>
+    </properties:properties>
+    <listructure:string id="BLANK_LINE.BLANK_LINE" initial="                                                                                " length="80" name="BLANK_LINE">
+      <properties:properties>
+        <properties:property name="picture" type="string">X(80)</properties:property>
+        <properties:property name="value">spaces</properties:property>
+        <properties:property name="displayLength" type="number">80</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="liType" type="string">char</properties:property>
+        <properties:property name="mask" type="string">X(80)</properties:property>
+        <properties:property name="storageLength" type="number">80</properties:property>
+      </properties:properties>
+    </listructure:string>
+  </listructure:struct>
+</listructure:listructure>

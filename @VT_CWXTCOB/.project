@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>@VT_CWXTCOB</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>com.compuware.xatester.ui.XaTesterBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>com.compuware.unittest.eclipse.common.ProjectNature</nature>
+		<nature>com.compuware.xatester.ui.XaTesterNature</nature>
+	</natures>
+</projectDescription>
