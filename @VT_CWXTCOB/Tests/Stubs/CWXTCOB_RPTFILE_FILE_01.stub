@@ -55,16 +55,16 @@
     </stub:output>
     <stub:checkconditions>
       <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_DD">
-        <checkconditions:expectation assert="noassert" type="number"/>
+        <checkconditions:expectation assert="noassert" type="number"></checkconditions:expectation>
       </checkconditions:simpleCheckcondition>
       <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_MM">
-        <checkconditions:expectation assert="noassert" type="number"/>
+        <checkconditions:expectation assert="noassert" type="number"></checkconditions:expectation>
       </checkconditions:simpleCheckcondition>
       <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_RUN_YY">
-        <checkconditions:expectation assert="noassert" type="number"/>
+        <checkconditions:expectation assert="noassert" type="number"></checkconditions:expectation>
       </checkconditions:simpleCheckcondition>
       <checkconditions:simpleCheckcondition refData="#output3.arg0.EMPLOYEE_HDR1.EMP_PAGE">
-        <checkconditions:expectation assert="noassert" type="number"/>
+        <checkconditions:expectation assert="noassert" type="number"></checkconditions:expectation>
       </checkconditions:simpleCheckcondition>
     </stub:checkconditions>
     <stub:inputDataCheckconditions/>

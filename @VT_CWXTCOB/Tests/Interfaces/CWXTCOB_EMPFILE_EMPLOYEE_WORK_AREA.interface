@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.1" encoding="UTF-8"?>
 <?totaltestVersion 20.8.1.v20210914-0447_93?>
 <!--Topaz for Total Test 20.8.1.v20210914-0447_93 2022/07/25 17:17:20-->
 <interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Tests/Interfaces/CWXTCOB_EMPFILE_EMPLOYEE_WORK_AREA.interface">
