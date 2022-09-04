@@ -1,11 +1,12 @@
-17:58:27.818 INFO      TOPAZ            ***************************************
-17:58:27.818 INFO      TOPAZ            ** Execution from Topaz with options **
-17:58:27.818 INFO      TOPAZ            ***************************************
-17:58:27.818 INFO      TOPAZ            Using repository: false
-17:58:27.818 INFO      TOPAZ            ***************************************
-17:58:27.818 INFO      Engine           Test Scenario execution started
-17:58:27.818 INFO      Engine           Using context settings:
-  Engine Version                : 20.8.1.v20210914-0447_93
+20:20:13.790 INFO      TOPAZ            ***************************************
+20:20:13.790 INFO      TOPAZ            ** Execution from Topaz with options **
+20:20:13.790 INFO      TOPAZ            ***************************************
+20:20:13.790 INFO      TOPAZ            Using repository: false
+20:20:13.790 INFO      TOPAZ            ***************************************
+20:20:13.790 INFO      Engine           Test Scenario execution started
+20:20:13.790 ALL       Engine           Total Test Version: 20.11.2.v20220724-1531_125
+20:20:13.791 INFO      Engine           Using context settings:
+  Engine Version                : 20.11.2.v20220724-1531_125
   Environment id                : 3733a884-8048-4e92-a5dc-22fee13c3d54
   Environment type              : Batch
   Operating system              : ZOS
@@ -16,24 +17,66 @@
   Job info interval seconds     : 3
   Socket read timeout           : 30
   Encoding                      : ISO8859-1
-  Codepage                      : 
+  Codepage                      : 939
   Host user Id                  : SJPKTT0
   Use Repository Server         : false
-17:58:27.818 INFO      Engine           Setting variables from context and context data extensions
-17:58:27.818 INFO      Engine             id: environmentId      value: 3733a884-8048-4e92-a5dc-22fee13c3d54
-17:58:27.818 INFO      Engine             id: environmentType    value: BATCH
-17:58:27.818 INFO      Engine             id: userId             value: SJPKTT0
-17:58:27.818 INFO      Engine             id: accountingInfo     value: 
-17:58:27.818 INFO      Unittest         Interpreting Unittest of module: CWXTCOB testscenario path: CWXTCOB_Scenario.testscenario
-17:58:28.333 INFO      Unittest         Using JCL skeleton to submit JCL
-17:58:40.107 INFO      CWCC - Demo System Sending Job execution request to Host 
-17:58:46.117 INFO      CWCC - Demo System Job execution completed with status:
-  Job status     : COMPLETED
-  Job status msg : Job SJPKTT0A(J0293503) ended with return code: 0000
-  Job name       : SJPKTT0A
-  Job id         : J0293503
-  Return code    : 0000
-  Abend code     : 
-  Abend reason   : 
-17:58:52.446 INFO      Unittest         Execution completed
-17:58:52.446 INFO      Engine           Test Scenario execution ended
+  Account Information           : 
+  Dataset High Level Qualifier  : TSU
+20:20:13.791 INFO      Engine           Setting variables from context and context data extensions
+20:20:13.791 INFO      Engine             id: environmentId      value: 3733a884-8048-4e92-a5dc-22fee13c3d54
+20:20:13.791 INFO      Engine             id: environmentType    value: BATCH
+20:20:13.791 INFO      Engine             id: userId             value: SJPKTT0
+20:20:13.791 INFO      Engine             id: accountingInfo     value: 
+20:20:13.791 INFO      Engine             id: datasetHQL         value: TSU
+20:20:13.791 INFO      Unittest         Interpreting Unittest of module: CWXTCOB testscenario path: CWXTCOB_Scenario.testscenario
+20:20:13.791 TRACE     Unittest         Initialising Total Test runner...
+20:20:13.794 DEBUG     Unittest         Getting TTTRUNNR loadlib version
+20:20:14.377 TRACE     Unittest         TTTRUNNR PTF level: 
+20:20:14.379 DEBUG     Unittest         Generic JCL skeleton used from environment/connection
+20:20:14.379 INFO      Unittest         Using JCL skeleton to submit JCL
+20:20:14.379 DEBUG     Unittest         Building binary files for test scenario: CWXTCOB_Scenario.testscenario in project Tests
+20:20:17.746 ERROR     Engine           Unable to upload binary files.
+20:20:17.746 ERROR     Engine           An error occurred. Now stopping the execution.
+20:20:17.747 INFO      Engine           ALL logging is turned on. The stacktrace below does not mean that an error occurred in the Java engine, but can be useful for debugging
+20:20:17.747 INFO      Engine           Stacktrace:com.compuware.xatester.xaunit.exceptions.ExecutionStoppedException: Unable to upload binary files.
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.interprete(UnittestComponent.java:314)
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.interprete(UnittestComponent.java:1)
+	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpretChildComponents(XaUnitInterpreter.java:100)
+	at com.compuware.xatester.xaunit.execution.XaUnitInterpreter.interpret(XaUnitInterpreter.java:274)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor.execute(XaUnitExecutor.java:414)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor.access$0(XaUnitExecutor.java:410)
+	at com.compuware.xatester.ui.execution.XaUnitExecutor$XaUnitExecutorJob.run(XaUnitExecutor.java:518)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)
+Caused by: java.lang.reflect.InvocationTargetException: Unable to upload binary files.
+	at com.compuware.xatester.unittest.extensions.ExecuteSkeletonsLocal.runTestSuite(ExecuteSkeletonsLocal.java:279)
+	at com.compuware.xatester.unittest.extensions.UnittestComponent.interprete(UnittestComponent.java:294)
+	... 7 more
+Caused by: com.compuware.unittest.cli.common.TotalTestCLIException: Unable to upload binary files.
+	at com.compuware.unittest.cli.transfer.internal.UploadFiles.doUpload(UploadFiles.java:160)
+	at com.compuware.unittest.cli.transfer.Transfer.doUpload(Transfer.java:232)
+	at com.compuware.unittest.cli.run.TestRunner.executeTestBuildDatasets(TestRunner.java:941)
+	at com.compuware.unittest.cli.run.TestRunner.buildDatasets(TestRunner.java:279)
+	at com.compuware.xatester.unittest.extensions.ExecuteSkeletonsLocal.runTestSuite(ExecuteSkeletonsLocal.java:102)
+	... 8 more
+Caused by: com.compuware.unittest.eclipse.common.TotalTestException: An exception occurred allocating dataset "TSU.SJPKTT0.TOTALTST.ID214462.BININP".
+
+Possible causes:
+  - The user does not have sufficient authority to allocate the dataset set.
+  - Not enough space to allocate dataset. 
+	at com.compuware.unittest.eclipse.hostservices.ResourceUtilities.allocateDataset(ResourceUtilities.java:678)
+	at com.compuware.unittest.eclipse.hostservices.ResourceUtilities.allocateDataset(ResourceUtilities.java:590)
+	at com.compuware.unittest.eclipse.hostservices.ResourceUtilities.uploadBinaryData(ResourceUtilities.java:254)
+	at com.compuware.unittest.cli.transfer.internal.UploadFiles.doUpload(UploadFiles.java:109)
+	... 12 more
+Caused by: データセットを割り振ることができませんでした。ユーザーに、データセットを割り振るのに十分な権限がないことが主な原因として考えられます。
+	at com.compuware.frameworks.hostservices.client.HostServicesExceptionFactory.createException(HostServicesExceptionFactory.java:167)
+	at com.compuware.frameworks.hostservices.client.HostServicesException.createInstance(HostServicesException.java:132)
+	at com.compuware.frameworks.hostservices.client.HostServicesException.createInstance(HostServicesException.java:109)
+	at com.compuware.frameworks.hostservices.client.HostServicesException.createInstance(HostServicesException.java:73)
+	at com.compuware.frameworks.hostservices.client.internal.objectfactory.HostServicesClientObjectFactory.createHostServicesException(HostServicesClientObjectFactory.java:44)
+	at com.compuware.frameworks.hostservices.client.internal.impl.hostresources.HostResourceCacheManager.allocateHostResourceOnHost(HostResourceCacheManager.java:256)
+	at com.compuware.frameworks.hostservices.client.internal.impl.hostresources.HostResourceManagerExImpl.allocateResourceOnHost(HostResourceManagerExImpl.java:135)
+	at com.compuware.unittest.eclipse.hostservices.ResourceUtilities.allocateDataset(ResourceUtilities.java:644)
+	... 15 more
+
+20:20:17.747 INFO      Engine           Test Scenario execution ended
